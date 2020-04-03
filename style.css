@@ -67,7 +67,7 @@ body {
 
   color: #ffffff;
 
-  background-image: url("../img/football_767.jpg");
+  background-image: url("img/football_767.jpg");
   background-color: #0a0e34;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,13 +170,13 @@ section {
   height: 100%;
 
   background-color: transparent;
-  background-image: url("../img/footballer_192.png");
+  background-image: url("img/footballer_192.png");
   background-repeat: no-repeat;
   background-position: 50% 14%;
 }
 
 .services:nth-child(2)::before {
-  background-image: url("../img/basketballer_302.png");
+  background-image: url("img/basketballer_302.png");
 }
 
 .services-title {
@@ -320,7 +320,7 @@ section {
   min-height: 480px;
   padding-top: 19.4vh;
 
-  background-image: url("../img/game_767.jpg");
+  background-image: url("img/game_767.jpg");
   background-color: #0a0e34;
   background-repeat: no-repeat;
   background-size: cover;
