@@ -102,7 +102,7 @@ body {
 
 .logo-text {
   align-self: center;
-  width: 135px;
+  width: 42vmin;
 }
 
 .header-intro {
@@ -110,7 +110,7 @@ body {
 }
 
 .header-intro .title {
-  font-size: 1.75rem;
+  font-size: 8.75vmin;
 }
 
 .header-title-secondpart {
@@ -120,7 +120,7 @@ body {
 .download-link {
   display: block;
   width: calc(100vw - 40px);
-  font-size: 0.5rem;
+  font-size: 2.5vmin;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -128,21 +128,20 @@ body {
 
 .link-wrapper {
   display: flex;
-  padding: 6px 0;
+  padding: 2vmin 0;
   align-items: center;
   justify-content: center;
 
   background-color: #5e3db3;
-  border-radius: 35px;
+  border-radius: 11vmin;
 }
 
 .download-link svg {
-  width: 24px;
+  width: 7.5vmin;
 }
 
 .link-text {
-  min-width: 85px;
-  max-width: 85px;
+  min-width: 26.5vmin;
   margin-left: 10px;
 }
 
@@ -365,24 +364,14 @@ section {
   position: relative;
   z-index: 1;
 
-  width: 60px;
+  width: 18.75vmin;
+
+  background-color: #6f4fcb;
+  border: 3vmin solid #6f4fcb;
+  border-bottom-width: 2vmin;
+  border-radius: 3.75vmin;
 
   fill: #ffffff;
-}
-
-.footer-logo::before {
-  position: absolute;
-  top: -10px;
-  left: -7px;
-  z-index: -1;
-
-  content: "";
-
-  display: block;
-  width: 74px;
-  height: 74px;
-  background-color: #6f4fcb;
-  border-radius: 12px;
 }
 
 .footer-slogan {
