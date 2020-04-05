@@ -101,7 +101,6 @@ body {
 }
 
 .logo-text {
-  align-self: center;
   width: 42vmin;
 }
 
@@ -248,8 +247,9 @@ section {
   left: 0;
   display: block;
   width: 17px;
-  border: 2px solid #5e3db3;
-  border-radius: 1px;
+  border-top: 2px solid #5e3db3;
+  border-bottom: 2px solid #5e3db3;
+  border-radius: 2px;
 }
 
 .service:nth-child(3) .service-title::after {
