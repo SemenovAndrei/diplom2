@@ -105,7 +105,11 @@ body {
   width: 135px;
 }
 
-.header-intro h1 {
+.header-intro {
+  align-self: start;
+}
+
+.header-intro .title {
   font-size: 1.75rem;
 }
 
@@ -263,7 +267,8 @@ section {
 }
 
 .hint-pic img {
-  height: 350px;
+  min-height: 350px;
+  width: 100%;
 }
 
 .hint-content {
@@ -382,13 +387,13 @@ section {
 
 .footer-slogan {
   font-size: 2rem;
-  line-height: 0.6;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .slogan-secondpart {
+  text-align: center;
   font-size: 0.875rem;
   font-weight: normal;
   color: #9b8ec1;
