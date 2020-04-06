@@ -145,7 +145,7 @@ body {
   margin-left: 10px;
 }
 
-.download-link-android .link-text {
+.link-text:last-child {
   margin-left: 8px;
 }
 
@@ -207,11 +207,11 @@ section {
   padding-top: 83px;
 }
 
-.service:nth-child(2) {
+.service:nth-child(3n + 2) {
   background-color: #f5f4f9;
 }
 
-.service:nth-child(3) {
+.service:nth-child(3n + 3) {
   background-color: #5e3db3;
 }
 
@@ -222,7 +222,7 @@ section {
   margin-bottom: 28px;
 
   font-size: 1.438rem;
-  line-height: 0;
+  line-height: 1;
   color: #c1c1c1;
 }
 
@@ -232,11 +232,11 @@ section {
   content: counter(cnt, decimal-leading-zero);
 
   position: absolute;
-  top: -3px;
+  top: 2px;
   left: 0;
 
   font-size: 0.875rem;
-  line-height: 0;
+  line-height: 1;
   font-weight: bold;
   color: #000000;
 }
@@ -244,7 +244,7 @@ section {
 .service-title::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 16px;
   left: 0;
 
   display: block;
@@ -257,6 +257,7 @@ section {
 }
 
 .service:nth-child(3) .service-title::after {
+  background-color: #ffffff;
   border-color: #ffffff;
 }
 .service:nth-child(3) .service-description {
@@ -266,13 +267,13 @@ section {
 /* .hints
 ==================== */
 
-.hint-pic {
-  background-color: #f5f4f9;
-}
-
 .hint-pic img {
+  display: block;
+
   min-height: 350px;
   width: 100%;
+
+  background-color: #f5f4f9;
 }
 
 .hint-content {
@@ -320,6 +321,7 @@ section {
 
 .hint-title {
   font-size: 1.75rem;
+  line-height: 1;
   color: #c1c1c1;
 
   margin-bottom: 24px;
@@ -384,7 +386,8 @@ section {
 }
 
 .footer-slogan {
-  font-size: 2rem;
+  font-size: 10.5vmin;
+  line-height: 1.2;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -392,7 +395,7 @@ section {
 
 .slogan-secondpart {
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 4.5vmin;
   font-weight: normal;
   color: #9b8ec1;
 }

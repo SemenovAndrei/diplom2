@@ -50,7 +50,7 @@ body {
 }
 
 .link-wrapper {
-  padding: 3.5vmin 0;
+  padding: 2.5vmin 0;
 }
 
 .download-link svg {
@@ -59,7 +59,11 @@ body {
 
 .link-text {
   min-width: 0;
-  margin: 0;
+  margin-left: 25px;
+}
+
+.link-text:last-child {
+  margin-left: 30px;
 }
 
 /* .services
@@ -70,7 +74,7 @@ body {
 }
 
 .services {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .services:first-child::before {
@@ -88,16 +92,16 @@ body {
 }
 
 .services:nth-child(2)::before {
-  top: 30px;
+  top: 65px;
   right: 0;
 
-  width: 350px;
+  width: 380px;
 
   background-image: url("../images/basketballer_436.png");
   background-size: contain;
 }
 
-.services:nth-child(2) .service:last-of-type {
+.services:nth-child(2n + 2) .service:nth-child(3n + 3) {
   background-color: #090c35;
 }
 
@@ -106,10 +110,9 @@ body {
 }
 
 .services-title {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   font-size: 5rem;
-  line-height: 0;
 }
 
 .service {
@@ -128,15 +131,68 @@ body {
 }
 
 .service-title::before {
-  font-size: 2vmin;
+  font-size: 1.125rem;
 }
 
 .service-title::after {
-  top: 7px;
+  top: 24px;
 
   width: 20px;
 
   border-top-width: 2.5px;
   border-bottom-width: 2.5px;
   border-radius: 2.5px;
+}
+
+/* .hints
+==================== */
+
+.hint-content {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hint-content::before {
+  top: -80px;
+  left: 30px;
+
+  width: 115px;
+  height: 115px;
+
+  font-size: 1.125rem;
+}
+
+.hint-content::after {
+  top: -10px;
+  left: 76px;
+
+  width: 21px;
+
+  border-top-width: 2.5px;
+  border-bottom-width: 2.5px;
+  border-radius: 2.5px;
+}
+
+.hint-title {
+  margin-bottom: 38px;
+
+  font-size: 5rem;
+  color: #e7e7e7;
+}
+
+.hint-text {
+  font-size: 1.5rem;
+}
+
+/* .footer
+==================== */
+
+.footer-container {
+  padding-top: 13vh;
+  padding-bottom: 14vh;
+}
+
+.footer .logo-text {
+  position: absolute;
+  bottom: 2.5vh;
 }
