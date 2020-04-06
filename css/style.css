@@ -172,8 +172,7 @@ section {
 .services::before {
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
+  top: 110px;
 
   content: "";
   display: block;
@@ -183,7 +182,7 @@ section {
   background-color: transparent;
   background-image: url("../images/footballer_192.png");
   background-repeat: no-repeat;
-  background-position: 50% 14%;
+  background-position: 50% 0;
 }
 
 .services:nth-child(2)::before {
@@ -223,6 +222,7 @@ section {
   margin-bottom: 28px;
 
   font-size: 1.438rem;
+  line-height: 0;
   color: #c1c1c1;
 }
 
@@ -232,10 +232,11 @@ section {
   content: counter(cnt, decimal-leading-zero);
 
   position: absolute;
-  top: 3px;
+  top: -3px;
   left: 0;
 
   font-size: 0.875rem;
+  line-height: 0;
   font-weight: bold;
   color: #000000;
 }
@@ -243,10 +244,13 @@ section {
 .service-title::after {
   content: "";
   position: absolute;
-  top: 21px;
+  top: 5px;
   left: 0;
+
   display: block;
   width: 17px;
+
+  background-color: #5e3db3;
   border-top: 2px solid #5e3db3;
   border-bottom: 2px solid #5e3db3;
   border-radius: 2px;
@@ -304,9 +308,13 @@ section {
   position: absolute;
   top: -14px;
   left: 47px;
+
   display: block;
   width: 16px;
-  border: 2px solid #8f78ca;
+
+  background-color: #8f78ca;
+  border-top: 2px solid #8f78ca;
+  border-bottom: 2px solid #8f78ca;
   border-radius: 2px;
 }
 
