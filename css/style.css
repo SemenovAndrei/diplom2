@@ -30,6 +30,7 @@ svg {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -56,13 +57,18 @@ body {
 ==================== */
 
 .container {
-  padding: 0 20px;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid greenyellow;
 }
 
 /* header
 ==================== */
 
-.header {
+.header,
+.footer {
   position: relative;
   z-index: 1;
 
@@ -74,7 +80,8 @@ body {
   background-size: cover;
 }
 
-.header::before {
+.header::before,
+.footer::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -88,14 +95,15 @@ body {
   opacity: 0.9;
 }
 
-.header-container {
+.header-container,
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
   height: 100vh;
-  min-height: 480px;
+  min-height: 320px;
   padding-top: 6vh;
   padding-bottom: 10vh;
 }
@@ -104,16 +112,18 @@ body {
   width: 42vmin;
 }
 
-.header-intro {
-  align-self: start;
-}
-
 .header-intro .title {
   font-size: 8.75vmin;
 }
 
+.header-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .header-title-secondpart {
-  display: block;
   margin-left: 45px;
 }
 
@@ -199,19 +209,19 @@ section {
 .service {
   padding-top: 60px;
   padding-bottom: 55px;
+}
+
+.service:nth-child(3n + 2) {
+  padding-top: 83px;
 
   background-color: #fafafa;
 }
 
-.service:first-child {
-  padding-top: 83px;
-}
-
-.service:nth-child(3n + 2) {
+.service:nth-child(3n + 3) {
   background-color: #f5f4f9;
 }
 
-.service:nth-child(3n + 3) {
+.service:nth-child(3n + 4) {
   background-color: #5e3db3;
 }
 
@@ -256,11 +266,11 @@ section {
   border-radius: 2px;
 }
 
-.service:nth-child(3) .service-title::after {
+.service:nth-child(3n + 4) .service-title::after {
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.service:nth-child(3) .service-description {
+.service:nth-child(3n + 4) .service-description {
   color: #ffffff;
 }
 
@@ -321,7 +331,6 @@ section {
 
 .hint-title {
   font-size: 1.75rem;
-  line-height: 1;
   color: #c1c1c1;
 
   margin-bottom: 24px;
@@ -335,38 +344,10 @@ section {
 ==================== */
 
 .footer {
-  position: relative;
-  z-index: 1;
-
   background-image: url("../images/game_767.jpg");
-  background-color: #0a0e34;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background-color: #1c1d3f;
-  opacity: 0.9;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 100vh;
-  min-height: 480px;
   padding-top: 10vh;
   padding-bottom: 5vh;
 }
@@ -381,20 +362,19 @@ section {
   border: 3vmin solid #6f4fcb;
   border-bottom-width: 2vmin;
   border-radius: 3.75vmin;
-
-  fill: #ffffff;
 }
 
 .footer-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan-firstpart {
   font-size: 10.5vmin;
-  line-height: 1.2;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
 .slogan-secondpart {
-  text-align: center;
   font-size: 4.5vmin;
   font-weight: normal;
   color: #9b8ec1;

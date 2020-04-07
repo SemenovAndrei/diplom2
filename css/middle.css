@@ -1,5 +1,5 @@
 .container {
-  padding: 0 30px;
+  width: calc(100% - 60px);
 }
 
 body {
@@ -69,43 +69,41 @@ body {
 /* .services
 ==================== */
 
-.main-container {
+.services:nth-child(odd) .main-container {
   padding-left: 260px;
+}
+
+.services:nth-child(even) .main-container {
+  padding-right: 260px;
 }
 
 .services {
   padding-top: 60px;
 }
 
-.services:first-child::before {
-  top: 80px;
-  left: -100px;
-
-  width: 400px;
+.services:nth-child(odd)::before {
+  top: 90px;
+  left: -185px;
 
   background-image: url("../images/footballer_497.png");
-  background-size: contain;
-}
-.services:nth-child(2) .main-container {
-  padding-left: 30px;
-  padding-right: 260px;
+  background-position: 0 0;
+  background-size: 530px;
 }
 
-.services:nth-child(2)::before {
-  top: 65px;
+.services:nth-child(even)::before {
+  top: 7px;
   right: 0;
 
-  width: 380px;
-
   background-image: url("../images/basketballer_436.png");
-  background-size: contain;
+  background-position: 100% 0;
+  background-size: 430px;
 }
 
-.services:nth-child(2n + 2) .service:nth-child(3n + 3) {
+.services:nth-child(even) .service:nth-child(3n + 4) {
   background-color: #090c35;
 }
 
-.services:nth-child(2) .service:nth-child(3) .service-title::before {
+.services:nth-child(even) .service:nth-child(3n + 4) .service-title::before {
   color: #8765dd;
 }
 
@@ -116,11 +114,11 @@ body {
 }
 
 .service {
-  padding-top: 5vmin;
-  padding-bottom: 4.5vmin;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.service:first-child {
+.service:nth-child(3n + 2) {
   padding-top: 40px;
 
   background-color: #ffffff;

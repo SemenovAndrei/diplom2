@@ -1,0 +1,44 @@
+.container {
+  max-width: 1920px;
+  padding-left: 195px;
+  padding-right: 195px;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
+/* .header
+==================== */
+
+.header {
+  background-image: url("../images/football_1920.jpg");
+  background-position: center;
+}
+
+.header-container {
+  padding-top: 4.5vh;
+  padding-bottom: 11.5vh;
+}
+
+.logo-text {
+  width: 10vw;
+}
+
+.header-intro {
+  width: 100%;
+}
+
+.header-intro .title {
+  font-size: 5vw;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.header-title-secondpart {
+  align-self: flex-end;
+
+  margin: 0;
+}
