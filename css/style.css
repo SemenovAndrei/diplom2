@@ -127,20 +127,27 @@ body {
   margin-left: 45px;
 }
 
+.header-content,
+.footer-content {
+  width: 100%;
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+}
+
 .download-link {
-  display: block;
-  width: calc(100vw - 40px);
-  font-size: 2.5vmin;
-  text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
 }
 
 .link-wrapper {
   display: flex;
-  padding: 2vmin 0;
   align-items: center;
   justify-content: center;
+
+  padding: 2vmin 0;
 
   background-color: #5e3db3;
   border-radius: 11vmin;
@@ -151,8 +158,14 @@ body {
 }
 
 .link-text {
-  min-width: 26.5vmin;
+  display: flex;
+  flex-direction: column;
+
+  min-width: 25%;
   margin-left: 10px;
+
+  font-size: 2.5vmin;
+  text-transform: uppercase;
 }
 
 .link-text:last-child {
