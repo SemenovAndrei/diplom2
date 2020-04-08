@@ -11,7 +11,6 @@ body {
 
 .header {
   background-image: url("../images/football_1280.jpg");
-  background-position: center;
 }
 
 .header-container {
@@ -33,11 +32,6 @@ body {
 
 .header-title-secondpart {
   margin-left: 92px;
-}
-
-.header-content,
-.footer-content {
-  width: 100%;
 }
 
 .download-links {
@@ -82,24 +76,6 @@ body {
   padding-top: 60px;
 }
 
-.services:nth-child(odd)::before {
-  top: 90px;
-  left: -185px;
-
-  background-image: url("../images/footballer_497.png");
-  background-position: 0 0;
-  background-size: 530px;
-}
-
-.services:nth-child(even)::before {
-  top: 7px;
-  right: 0;
-
-  background-image: url("../images/basketballer_436.png");
-  background-position: 100% 0;
-  background-size: 430px;
-}
-
 .services:nth-child(even) .service:nth-child(3n + 4) {
   background-color: #090c35;
 }
@@ -112,6 +88,30 @@ body {
   margin-bottom: 20px;
 
   font-size: 5rem;
+}
+
+.services-title::after {
+  top: 0;
+
+  width: 500px;
+  height: 700px;
+
+  background-image: url("../images/footballer_497.png");
+  background-position: 0 0;
+
+  transform: translateX(-450px);
+}
+
+.services:nth-child(2) .services-title::after {
+  top: -2rem;
+  left: 100%;
+
+  width: 400px;
+  height: 570px;
+
+  background-image: url("../images/basketballer_436.png");
+
+  transform: translateX(-110px);
 }
 
 .service {
@@ -185,6 +185,10 @@ body {
 
 /* .footer
 ==================== */
+
+.footer {
+  background-image: url("../images/game_1280.jpg");
+}
 
 .footer-container {
   padding-top: 13vh;
