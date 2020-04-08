@@ -103,7 +103,7 @@ body {
 }
 
 .services:nth-child(2) .services-title::after {
-  top: -2rem;
+  top: -32px;
   left: 100%;
 
   width: 400px;
