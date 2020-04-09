@@ -152,7 +152,19 @@ body {
 ======================================== */
 
 .hint .container {
+  display: flex;
+  flex-direction: column;
   max-width: 765px;
+}
+
+@media (max-width: 1279px) {
+  .hint {
+    align-items: center;
+  }
+
+  .hint .container {
+    justify-content: center;
+  }
 }
 
 .hint:nth-child(odd) .container {
@@ -186,10 +198,6 @@ body {
   .hint-pic img {
     min-height: 730px;
   }
-}
-
-.hint-content {
-  align-items: center;
 }
 
 @media (min-width: 1280px) {
