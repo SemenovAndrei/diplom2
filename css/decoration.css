@@ -46,7 +46,7 @@ img:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media (min-width: 961px) {
+@media (min-width: 1280px) {
   .hint-content {
     transition: all 1s ease-out;
   }
@@ -71,11 +71,15 @@ img:hover {
     font-size: 12px;
   }
 
+  header.header .header-container {
+    max-width: 1100px;
+  }
+
   .logo-text {
     width: 12rem;
   }
 
-  title .header-title {
+  .header-container .header-intro {
     font-size: 4rem;
   }
 
