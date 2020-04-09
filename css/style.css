@@ -440,7 +440,7 @@ img:hover {
 .header-intro,
 .footer-slogan,
 .footer-logo {
-  text-shadow: 1px 1px 0px rgb(231, 231, 231);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 961px) {
