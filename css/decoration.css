@@ -66,7 +66,7 @@ img:hover {
   }
 }
 
-@media (orientation: landscape) and (max-height: 767px) {
+@media (orientation: landscape) and (max-height: 650px) {
   html {
     font-size: 12px;
   }
@@ -75,15 +75,24 @@ img:hover {
     width: 12rem;
   }
 
-  .header-title {
+  title .header-title {
     font-size: 4rem;
   }
 
-  .slogan-firstpart {
+  footer.footer .footer-logo {
+    width: 9rem;
+  }
+
+  footer.footer .footer-container {
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+
+  footer.footer .slogan-firstpart {
     font-size: 4rem;
   }
 
-  .slogan-secondpart {
+  footer.footer .slogan-secondpart {
     font-size: 2rem;
   }
 
@@ -97,5 +106,9 @@ img:hover {
 
   .download-link svg {
     width: 2rem;
+  }
+
+  footer.footer .logo-text {
+    bottom: 20px;
   }
 }
