@@ -7,7 +7,7 @@ body {
 }
 
 /* .header
-==================== */
+======================================== */
 
 .header {
   background-image: url("../images/football_1280.jpg");
@@ -62,7 +62,7 @@ body {
 }
 
 /* .services
-==================== */
+======================================== */
 
 .services:nth-child(odd) .main-container {
   padding-left: 260px;
@@ -144,7 +144,7 @@ body {
 }
 
 /* .hints
-==================== */
+======================================== */
 
 .hint-content {
   padding-top: 90px;
@@ -184,7 +184,7 @@ body {
 }
 
 /* .footer
-==================== */
+======================================== */
 
 .footer {
   background-image: url("../images/game_1280.jpg");
