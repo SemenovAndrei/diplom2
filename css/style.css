@@ -2,7 +2,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold.woff") format("woff"),
-    url(../fonts/OpenSans-Bold.ttf) format(truetype);
+    url(../fonts/OpenSans-Bold.ttf) format("opentype");
   font-style: normal;
   font-weight: 700;
 }
@@ -11,7 +11,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
     url("../fonts/OpenSans-Regular.woff") format("woff"),
-    url(../fonts/OpenSans-Regular.ttf) format(truetype);
+    url(../fonts/OpenSans-Regular.ttf) format("opentype");
   font-style: normal;
   font-weight: 400;
 }
@@ -200,7 +200,7 @@ section {
 .services-title::after {
   position: absolute;
   z-index: 1;
-  top: 70px;
+  bottom: -300px;
   left: 0;
 
   content: "";
@@ -216,7 +216,7 @@ section {
 }
 
 .services:nth-child(2) .services-title::after {
-  top: 80px;
+  bottom: -270px;
   height: 250px;
 
   background-image: url("../images/basketballer_302.png");

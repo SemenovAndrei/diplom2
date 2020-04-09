@@ -54,13 +54,15 @@ img:hover {
   .hint-text {
     transition: all 0.5s ease-out;
     opacity: 0;
+    height: 0;
   }
 
   .hint-content:hover {
-    padding-top: calc(((100vw - 365px) / (730 - 365) * (88 - 44) + 44px) / 2);
+    padding-top: calc(((100vw - 365px) / 365 * (88 - 44) + 44px) / 2);
   }
 
   .hint-content:hover .hint-text {
+    height: 100%;
     opacity: 1;
     transition: all 1s ease-out;
   }

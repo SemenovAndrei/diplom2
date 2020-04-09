@@ -28,7 +28,7 @@ body {
 }
 
 .header-intro .title {
-  font-size: calc((100vw - 60rem) / (120 - 60) * (6 - 4.7) + 4.7rem);
+  font-size: calc((100vw - 60rem) / 60 * (6 - 4.7) + 4.7rem);
 }
 
 @media (min-width: 1440px) {
@@ -168,7 +168,6 @@ body {
 .hint {
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 .hint-pic,
@@ -180,7 +179,7 @@ body {
 }
 
 .hint-pic img {
-  min-height: calc((100vw - 961px) / (1920 - 961) * (730 - 365) + 365px);
+  min-height: calc((100vw - 961px) / 959 * (730 - 365) + 365px);
 }
 
 @media (min-width: 1920px) {
@@ -190,8 +189,14 @@ body {
 }
 
 .hint-content {
-  padding-top: calc((100vw - 365px) / (730 - 365) * (88 - 44) + 44px);
-  padding-bottom: 10px;
+  align-items: center;
+}
+
+@media (min-width: 1280px) {
+  .hint-content {
+    padding-top: calc((100vw - 365px) / 365 * (88 - 44) + 44px);
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -249,10 +254,10 @@ body {
 }
 
 .hint-title {
-  padding-top: calc((100vw - 961px) / (1920 - 961) * (88 - 44) + 44px);
+  padding-top: calc((100vw - 961px) / 959 * (88 - 44) + 44px);
   margin-bottom: 5%;
 
-  font-size: calc((100vw - 60rem) / (120 - 60) * (5 - 2.5) + 2.5rem);
+  font-size: calc((100vw - 60rem) / 60 * (5 - 2.5) + 2.5rem);
   color: #e7e7e7;
 }
 
@@ -265,7 +270,7 @@ body {
 }
 
 .hint-text {
-  font-size: calc((100vw - 60rem) / (120 - 60) * (1.5 - 1.25) + 1.25rem);
+  font-size: calc((100vw - 60rem) / 60 * (1.5 - 1.25) + 1.25rem);
 }
 
 @media (min-width: 1920px) {
