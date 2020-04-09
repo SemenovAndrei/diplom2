@@ -179,6 +179,16 @@ body {
   padding: 0;
 }
 
+.hint-pic img {
+  min-height: calc((100vw - 961px) / (1920 - 961) * (730 - 365) + 365px);
+}
+
+@media (min-width: 1920px) {
+  .hint-pic img {
+    min-height: 730px;
+  }
+}
+
 .hint-content {
   padding-top: calc((100vw - 365px) / (730 - 365) * (88 - 44) + 44px);
   padding-bottom: 10px;
